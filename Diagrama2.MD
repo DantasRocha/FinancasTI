@@ -10,7 +10,7 @@ Empresa,Cargo,Pessoa,Banco,Cartao,Conta,Categoria,Limite,Receita,Despesa,Mensage
 classDiagram
 
 
-class Log {
+class Log2 {
     acao: string;
     usuario?: Usuario;
     entidade?: any;
