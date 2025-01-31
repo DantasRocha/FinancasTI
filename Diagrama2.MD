@@ -8,7 +8,7 @@ classDiagram
 
 class Pessoa {
     id: string;
-    Nome: string;
+    nome: string;
     cpf: string;
     email: string;
     dataNasc :datetime;
@@ -19,10 +19,28 @@ class Pessoa {
 }
 
 
-class Log3 {
-    acao: string;
-    usuario?: Usuario;
-    entidade?: any;
+class Enderecos {
+    id: string;
+    rua: string;
+    numero: string;
+    complemento: string;
+    bairro: string;
+    cidade: string;
+    estado: string;
+    cep: string;
+}
+class Contato{
+   id:string;
+   tipo: string;
+   valor:string;
+}
+
+class EnumChaveValor{
+    id: string;
+    chave: string;
+    valor: string;
+    tipo: string;
+    status: string;
 }
 
 ```
