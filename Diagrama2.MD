@@ -12,6 +12,10 @@ class Pessoa {
     cpf: string;
     email: string;
     dataNasc :datetime;
+    createdAt :datetime;
+    updatedAt :datetime;
+    enderecos :Endereco[]=[]
+    contatos : Contato[]=[]
 }
 
 
