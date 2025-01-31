@@ -30,7 +30,7 @@ class Perfil{
    status:string;
 }
 
-class Enderecos {
+class Endereco {
     id: string;
     rua: string;
     numero: string;
