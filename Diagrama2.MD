@@ -6,6 +6,11 @@
 classDiagram
 
 
+Pessoa --> Perfil
+Pessoa --> endereco
+Pessoa --> Contato
+Contato --> EnumChaveValor
+
 class Pessoa {
     id: string;
     nome: string;
@@ -18,6 +23,11 @@ class Pessoa {
     contatos : Contato[]=[]
 }
 
+class Perfil{
+   id:string;
+   descricao: string;
+   status:string;
+}
 
 class Enderecos {
     id: string;
@@ -29,6 +39,7 @@ class Enderecos {
     estado: string;
     cep: string;
 }
+
 class Contato{
    id:string;
    tipo: string;
