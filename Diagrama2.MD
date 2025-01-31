@@ -16,4 +16,11 @@ class Log2 {
     entidade?: any;
 }
 
+
+class Log3 {
+    acao: string;
+    usuario?: Usuario;
+    entidade?: any;
+}
+
 ```
