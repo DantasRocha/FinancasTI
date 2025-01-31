@@ -7,7 +7,7 @@ classDiagram
 
 
 Pessoa --> Perfil
-Pessoa --> endereco
+Pessoa --> Endereco
 Pessoa --> Contato
 Contato --> EnumChaveValor
 
@@ -19,6 +19,7 @@ class Pessoa {
     dataNasc :datetime;
     createdAt :datetime;
     updatedAt :datetime;
+    perfil : Perfil
     enderecos :Endereco[]=[]
     contatos : Contato[]=[]
 }
