@@ -46,6 +46,7 @@ model Contato{
   id    String  @id @default(auto()) @map("_id") @db.ObjectId 
   chave String
   valor String
+  type  String
   pessoa Pessoa[]
   tipo  EnumGenerico  @relation(fields: [EnumGenericoId], references: [id])
   EnumGenericoId String   @db.ObjectId
@@ -53,6 +54,8 @@ model Contato{
 
 
 model EnumGenerico{
-  id    String  @id @default(auto()) @map("_id") @db.ObjectId 
+  id    String  @id @default(auto()) @map("_id") @db.ObjectId
+ chave String
+  valor String
  contato Contato[]
 }
