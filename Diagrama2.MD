@@ -7,9 +7,11 @@ classDiagram
 
 
 class Pessoa {
-    acao: string;
-    usuario?: Usuario;
-    entidade?: any;
+    id: string;
+    Nome: string;
+    cpf: string;
+    email: string;
+    dataNasc :datetime;
 }
 
 
